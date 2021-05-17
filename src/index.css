@@ -5,9 +5,138 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: #FFFFFF;
 }
-
+a {
+  text-decoration: none !important;
+}
+li {
+  list-style: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-links li {
+  margin: 0 10px;
+  padding: 10px;
+}
+.nav-links a {
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer {
+  padding: 20px 50px 50px;
+  background-color: #000000
+}
+
+.footer a {
+  color: #666;
+  font-size: 14px;
+}
+.footer a:hover {
+  color: #fff;
+}
+.footer h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ccc;
+}
+.footerLink.social {
+  margin: 0 10px !important;
+  font-size: 25px;
+}
+.footerLinkGroup {
+  margin: 0;
+  /* padding: ; */
+}
+.footer-column {
+  margin-top: 30px;
+}
+.footer-column:last-child ul {
+  padding: 0;
+}
+@media(max-width: 800px) {
+  .footer-column:last-child ul {
+    padding-left: 40px;
+  }
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px;
+}
+.overlay2 {
+  background: linear-gradient(transparent, rgba(0,0,0));
+  color: #FFFFFF;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  right: 0; 
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;                               
+}
+
+.bod{
+  border-right: 1px solid #eee;
+  width: 50%;
+  text-align: center;
+}
+.bod2{
+  width: 50%;
+  text-align: center;
+}
+
+.star svg {
+  font-size: 25px;
+}
+
+.slider{
+  text-align: center;
+  max-width: 50%;
+}
+.slider h4 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.ca-item{
+  min-height: 650px;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover
+}
+.ca-item .overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+@media(max-width: 800px) {
+  .slider h6 {
+    display: none;
+  }
+  .slider{
+    max-width: 70%;
+  }
+  .footer {
+    padding: 20px 25px 50px;
+  }
+  .footer-txt{
+    font-size: 14px !important;
+  }
+  .pay-text {
+    font-size: 20px !important;
+  }
 }
